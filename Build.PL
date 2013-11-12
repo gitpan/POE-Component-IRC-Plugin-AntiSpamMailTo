@@ -13,7 +13,9 @@ my $builder = Module::Build->new(
     requires => {
         'HTML::Entities'                        => 1.35,
         'POE::Component::IRC::Plugin::BaseWrap' => 0.008,
+        'perl' => '5.006',
     },
+    configure_requires => { 'Module::Build' => 0 },
     add_to_cleanup      => [ 'POE-Component-IRC-Plugin-AntiSpamMailTo-*' ],
     create_makefile_pl => 'traditional',
 );

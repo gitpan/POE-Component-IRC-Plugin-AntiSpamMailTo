@@ -2,11 +2,12 @@ POE-Component-IRC-Plugin-AntiSpamMailTo
 
 This module is a small L<POE::Component::IRC> plugin which uses
 L<POE::Component::IRC::Plugin> for its base. It provides interface to
-generate C<< <a href="mailto:foo@bar">... >> links that escape every single characters
-preventing dumb spam bots from harvesting the email addresses. I did not do any actual research
-on how useful this technique actually is but people who employ it say that it's effective
-as long as you encode the C<mailto:> part as well.
-The plugin accepts input from public channel events, C</notice> messages as well
+generate C<< <a href="mailto:foo@bar">... >> links that escape every
+single characters preventing dumb spam bots from harvesting the email
+addresses. I did not do any actual research on how useful this
+technique actually is but people who employ it say that it's effective
+as long as you encode the C<mailto:> part as well. The plugin accepts
+input from public channel events, C</notice> messages as well
 as C</msg> (private messages); although that can be configured at will.
 
 INSTALLATION
